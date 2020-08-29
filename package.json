@@ -1,0 +1,22 @@
+{
+  "name": "nlw",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "react-scripts start"
+
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2",
+    "sqlite-async": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

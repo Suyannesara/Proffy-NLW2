@@ -1,0 +1,164 @@
+
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+   
+    /*Tamanho da fonte padrão: 16px - 100% - 1rem*/
+    /*100% e 1rem sãos medidas relativas, dependem do root*/
+    font-size: 100%; /* controle das medidas rem */
+}
+
+html, body{
+    height: 100vh;
+    margin: 0px;
+}
+
+#page-loading{
+    
+    display: flex;
+    background-color: #8257e5;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-loading .img-background {
+    position: absolute;
+
+    width: 10rem;
+    height: 30rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+#page-loading .container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 2fr;
+
+}
+
+#page-loading .container .logo{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+}
+
+#page-loading .container .text {
+    text-align: center;
+    align-content: center;
+
+}
+
+#page-loading .container .text h1{
+    color: var(--color-title-in-primary);
+
+    font: bold 45px Archivo;
+
+}
+
+#page-loading .container .text p{
+    color: var(--color-text-in-primary);
+
+    font: normal 16px Archivo;
+
+}
+
+#page-loading .container .button{
+
+    display: flex;
+    justify-self: center;
+    margin-top: 60px;
+    padding: 0.3rem 4rem;
+    border-radius: 8px;
+   
+    color: var(--color-button-text);
+    font: normal 16px Archivo;
+
+    background: var(--color-secondary);
+
+    transition: background 0.2s;
+  
+}
+
+#page-loading .container .button:hover{
+    background: var(--color-secondary-dark);
+    cursor: pointer;
+
+}
+
+
+
+
+@media(max-width: 1000px){
+
+    html, body{
+       width: 100vw;
+       height: 100vh;
+    }
+    #page-loading{
+        margin: 0px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #page-loading .img-background{
+        width: 100%;
+    }
+
+    #page-loading .img-background img{
+        width: 30rem;
+    }
+
+    #page-loading .container{
+        padding: 4rem;
+
+        width: 20rem;
+
+        column-gap: 0;
+    }
+
+    #page-loading .container .logo{
+        width: 4rem;
+        height: 4rem;
+   
+    }
+
+    #page-loading .container .text h1{
+        font-size: 2rem;
+    }
+
+    #page-loading .container .text p{
+        font-size: 0.7rem;
+    }
+
+    #page-loading .container .button{
+        margin-top: 2rem;
+        padding: 0.2rem 1rem;
+    }
+
+    
+}
+
